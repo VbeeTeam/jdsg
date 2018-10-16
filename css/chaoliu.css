@@ -1,0 +1,6 @@
+/*nav*/		
+			.nav_d a:nth-child(2){
+				color: #ea1e3f;			
+				background: url(../img/bottom.jpg) repeat-x bottom;
+				
+			}
