@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="jdsg/css/zhuce.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
 	</head>
 	<body>
 <!--top-->
 		<div class="top">
-			<a href="#"><img src="jdsg/img/jdlogo.jpg"/></a>
+			<a href="#"><img src="img/jdlogo.jpg"/></a>
 			<span>欢迎注册</span>
 			<span>已有账号？</span>
 			<a href="#">请登录></a>			
@@ -24,8 +24,16 @@
 				<span>............></span>
 				<span>3</span>
 				<div class="zhuce">
-					<input type="text" name="telePhone" id="telePhone" value="" placeholder="建议使用常用手机号"/>
-					<input type="button" name="btn2" id="btn2" value="点击按钮进行验证"/>
+					<input type="text" name="telePhone" id="telePhone" value="" placeholder="建议使用常用手机号"/><b id="b1"></b>
+					<input type="button" name="btn2" id="btn2" value="点击按钮进行验证"/><br/>
+					<input type="checkbox" name="check" id="check" class="checkboxs"/>
+					<i>我已阅读同意</i><a href="#">《京东用户注册协议和隐私条款》</a>
+					<input type="button" name="btn3" id="btn3" value="下一步"/>					
+				</div>
+				
+				<div class="zhuce_zhan">
+					<a href="#">企业用户注册</a>
+					<a href="#">国际站注册</a>					
 				</div>
 			</div>
 		</div>
@@ -54,3 +62,10 @@
        	</div>
 	</body>
 </html>
+<script type="text/javascript" src="js/common.js" ></script>
+<script type="text/javascript" src="js/reg.js" ></script>
+<script type="text/jscript">
+	window.onload = function(){
+		regTele();
+	}
+</script>

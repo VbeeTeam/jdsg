@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="jdsg/css/denglu.css"/>
+		<link rel="stylesheet" type="text/css" href="css/denglu.css"/>
 	</head>
 	<body>
 <!--top-->
 		<div class="top">
-			<a href="#" class="one_a"><img src="jdsg/img/jdlogo.jpg"/></a>
+			<a href="#" class="one_a"><img src="img/jdlogo.jpg"/></a>
 			<span>
 				欢迎登录	
 			</span>
-			<a href="#"><img src="jdsg/img/xiaoxi.jpg"/>登录页面，调查问卷</a>
+			<a href="#"><img src="img/xiaoxi.jpg"/>登录页面，调查问卷</a>
 			<p class="top_p">依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="#">《京东隐私政策》</a>将更有利于保护您的个人隐私。</p>
 		</div>
 <!--images-->
@@ -24,8 +24,8 @@
 					<a href="#">账户登录</a>
 				</div>
 				<div class="denglus_tu">
-					<img src="jdsg/img/dengluerweima.jpg"/>
-					<img src="jdsg/img/denglusj.jpg"/>
+					<img src="img/dengluerweima.jpg"/>
+					<img src="img/denglusj.jpg"/>
 					<p>
 						<span>打开</span>
 						<a href="#">手机京东</a>
@@ -40,16 +40,18 @@
 				<div class="denglus_two">
 					<input type="text" name="userName" id="userName" placeholder="邮箱/用户名/已验证手机" value=""/>
 					<span id="userSpan" class="spans"></span>
+					<p id="tite"></p>
 					<input type="password" id="userPass" name="userPass" class="userPass" placeholder="密码" value=""/>
 					<span id="userSpan2" class="spans"></span>
+					
 				<a href="#">忘记密码</a>
-				<input type="submit" name="btn1" id="btn1" value="登录" />
+				<input type="button" name="btn1" id="btn1" value="登录" />
 				</div>
 				<div class="denglus_f">
-					<a href="#"><img src="jdsg/img/qq.jpg"/>QQ</a>
+					<a href="#"><img src="img/qq.jpg"/>QQ</a>
 					<span>丨</span>
-					<a href="#"><img src="jdsg/img/weixin.jpg"/>微信</a>
-					<a href="#"><img src="jdsg/img/youjian.jpg"/>立即注册</a>
+					<a href="#"><img src="img/weixin.jpg"/>微信</a>
+					<a href="#"><img src="img/youjian.jpg"/>立即注册</a>
 				</div>
 			</div>
 		</div>
@@ -78,12 +80,15 @@
        	</div>
 	</body>
 </html>
-<script type="text/javascript" src="jdsg/js/common.js" ></script>
-<script type="text/javascript" src="jdsg/js/hover.js" ></script>
-<script type="text/javascript" src="jdsg/js/reg.js" ></script>
+<script type="text/javascript" src="js/common.js" ></script>
+<script type="text/javascript" src="js/hover.js" ></script>
+<script type="text/javascript" src="js/reg.js" ></script>
+<script type="text/javascript" src="js/ajax180506.js" ></script>
+<script type="text/javascript" src="js/ajax.js" ></script>
 <script type="text/javascript">
 	window.onload = function(){
 		dengluDown();
 		reg();
+		ajaxs();		
 	}
 </script>

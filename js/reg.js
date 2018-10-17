@@ -14,6 +14,11 @@ function reg(){
 		}	
 		
 	}
+	$("#userName").onblur = function(){
+		if(this.value==""){
+			$("#userSpan").innerHTML = "";
+		}			
+	}
 	
 	$("#userPass").onkeyup = function(){
 		var regLetter = /[a-zA-Z]/; 
@@ -26,5 +31,27 @@ function reg(){
 		}else{
 			$("#userSpan2").innerHTML = "×";
 		}								
-	}		
+	}
+	$("#userPass").onblur = function(){
+		if(this.value==""){
+			$("#userSpan2").innerHTML = "";
+		}			
+	}
+}
+function regTele(){
+	$("#telePhone").onkeyup = function(){
+		
+		let reg = /^1[3-9]\d{9}$/; 
+		let str = this.value;
+		if(reg.test(str)){
+			$("#b1").innerHTML = "√";
+		}else{
+			$("#b1").innerHTML = "×";
+		}								
+	}
+	$("#telePhone").onblur = function(){
+		if(this.value==""){
+			$("#b1").innerHTML = "";
+		}			
+	}
 }

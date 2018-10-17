@@ -44,33 +44,83 @@ a{
 /*section*/
 .section{
 	width: 1210px;
-	height: 675px;
+	height: 560px;
 	margin: 0 auto;
 	border-bottom: 1px solid #c6c6c6;
 }
 .section_zhuce{
 	width: 420px;
 	height: 420px;
-	margin: 80px 400px 180px 400px;
-	text-align: center;
+	margin: 80px 400px 0px 400px;
+	padding-top: 20px;
+	box-sizing: border-box;
 }
 .section span{
 	display: inline-block;
 	font-size: 18px;
 }
-.section span:nth-child(2n+1){
-	
+.section span:nth-child(2n+1){	
 	width: 20px;
 	height: 20px;
-	text-align: center;
+	text-align:center;
 	line-height: 20px;
 	border: 1px solid gray;
 	border-radius:50% ;
 }
 .section span:nth-child(1){
+	margin-left:80px ;
 	background: #33bb44;
 }
-
+.zhuce input{	
+	width: 380px;
+	height: 50px;
+	margin:0 auto;
+	font-size: 14px;
+}
+.zhuce input:nth-of-type(1){
+	margin-top: 30px;
+}
+#b1{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.zhuce input:nth-of-type(2){
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.zhuce input:nth-of-type(4){
+	background-color: #e2231a;
+	border: 0;
+	margin-bottom: 30px;
+}
+.zhuce .checkboxs{
+	width: 20px;
+	height: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.zhuce i{
+	font-size:14px;
+}
+.zhuce a{
+	font-size:14px;
+}
+.zhuce a:hover{
+	color: red;
+}
+.zhuce_zhan a:nth-child(1){
+	font-size: 14px;
+	color: #333333;
+	margin-right: 200px;
+}
+.zhuce_zhan a:nth-child(2){
+	font-size: 14px;
+	color: #333333;
+}
+.zhuce_zhan a:hover{
+	color: red;
+}
 
 /*bottom*/
 		.bottom{
